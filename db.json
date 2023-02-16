@@ -1,0 +1,56 @@
+{
+  "projects": [
+    {
+      "id": 2,
+      "name": "Project 2",
+      "category": "Zuwno",
+      "src": "Project 1"
+    },
+    {
+      "id": 3,
+      "name": "Project 3",
+      "category": "Zuwno",
+      "src": "Project 1"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "HTML5 & CSS3",
+      "src": "",
+      "subtitle": ""
+    },
+    {
+      "id": 2,
+      "name": "Javascript",
+      "src": "",
+      "subtitle": ""
+    },
+    {
+      "id": 3,
+      "name": "Nodejs",
+      "src": "",
+      "subtitle": ""
+    },
+    {
+      "id": 4,
+      "name": "Nextjs",
+      "src": "",
+      "subtitle": ""
+    },
+    {
+      "name": "adad",
+      "src": "adada",
+      "subtitle": "adad",
+      "id": 5
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Phong",
+      "email": "phongpdph21712@fpt.edu.vn",
+      "content": "Hello"
+    }
+  ]
+}
