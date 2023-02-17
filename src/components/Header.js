@@ -1,6 +1,14 @@
 import MainNav from "./Nav";
-
+import { useEffect, useState } from "@/lib";
 const Header = () => {
+
+    const [aboutMe, setaboutMe] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/aboutme")
+            .then((response) => response.json())
+            .then(( data ) => setaboutMe(data));
+  },[]);
     return `
     ${MainNav()}
     <header id="home" class="header">
@@ -8,7 +16,13 @@ const Header = () => {
         <div class="header-content container">
             <h1 class="header-title">
                 <span class="up">HI!</span>
-                <span class="down">I am Phong</span>
+                ${aboutMe.map((aboutme) => 
+                    {
+                        return `
+                        <span class="down">I am ${aboutme.name}</span>
+                        `
+                    }).join("")}
+                
             </h1>
             <p class="header-subtitle">FRONTEND WEB DESIGNER</p>            
 

@@ -12,12 +12,14 @@ const AdminAboutMeEditPage = ({ id }) => {
         const form = document.getElementById("form-edit");
         const AboutMeSrc = document.getElementById("aboutme-src");
         const AboutMeSubtitle = document.getElementById("aboutme-subtitle");
+        const AboutMeName = document.getElementById("aboutme-name");
 
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
             const formData = {
                 id,
+                name : AboutMeName.value ,
                 subtitle: AboutMeSubtitle.value,
                 src: AboutMeSrc.value,
                 
@@ -36,6 +38,10 @@ const AdminAboutMeEditPage = ({ id }) => {
         <div class="container pt-5">
         <h1>Sửa giới thiệu</h1>
             <form action="" id="form-edit">
+            <div class="form-group">
+                    <label for="" class="form-label">Tên</label>
+                    <input type="text" class="form-control" id="aboutme-name" value="${aboutMe.name}" />
+                </div>
                 <div class="form-group">
                     <label for="" class="form-label">Nội dung</label>
                     <input type="text" class="form-control" id="aboutme-subtitle" value="${aboutMe.subtitle}" />

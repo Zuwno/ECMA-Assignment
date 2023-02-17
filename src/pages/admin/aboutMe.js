@@ -16,7 +16,8 @@ const AdminAboutMePage = () => {
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Nội dung</th>
+                            <th>Tên</th>
+                            <th>Giới thiệu</th>
                             <th>Ảnh</th>
                             <th></th>
                         </tr>
@@ -27,6 +28,7 @@ const AdminAboutMePage = () => {
                                     return `
                                 <tr>
                                     <td>${index + 1}</td>
+                                    <td>${aboutMe.name}</td>
                                     <td>${aboutMe.subtitle}</td>
                                     <td>${aboutMe.src}</td>
                                     <td><a href="#/Admin/AboutMe/${aboutMe.id}/Edit">Edit</a> </td>
