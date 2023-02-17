@@ -5,7 +5,7 @@ const MainNav = () => {
   <nav id="show" class="custom-navbar show-cus " data-spy="affix" data-offset-top="20">
   <div class="container">
       <a class="logo" href="#">Zuwno</a>         
-      <ul class="nav ">
+      <ul class="nav show ">
           <li class="item">
               <a class="link" href="#">Home</a>
           </li>

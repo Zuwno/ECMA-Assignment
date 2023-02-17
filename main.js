@@ -11,6 +11,8 @@ import AdminSkillsPage from '@/pages/admin/skills';
 import AdminSkillEditPage from '@/pages/admin/skills-edit';
 import AdminSkillsAddPage from '@/pages/admin/skills-add';
 import AdminContactsPage from '@/pages/admin/contact';
+import AdminAboutMePage from '@/pages/admin/aboutMe';
+import AdminAboutMeEditPage from '@/pages/admin/aboutMe-edit';
 
 
 const app = document.querySelector("#app");
@@ -26,6 +28,8 @@ router.on ("Admin/Skills", () => render(AdminSkillsPage, app))
 router.on ("Admin/Skills/Add" , () => render(AdminSkillsAddPage, app))
 router.on("/Admin/Skill/:id/Edit", ({ data }) => render(() => AdminSkillEditPage(data), app));
 router.on ("Admin/Contacts", () => render(AdminContactsPage, app))
+router.on ("Admin/AboutMe", () => render(AdminAboutMePage, app))
+router.on("/Admin/AboutMe/:id/Edit", ({ data }) => render(() => AdminAboutMeEditPage(data), app));
 
 router.notFound( () => render(NotFoundPage,app) );
 

@@ -9,7 +9,7 @@ const AdminProjectsPage = () => {
             .then((response) => response.json())
             .then(( data ) => setProjects(data));
   },[]);
-
+  
   useEffect(function () {
     const btns = document.querySelectorAll(".btn-remove");
     for (let btn of btns) {

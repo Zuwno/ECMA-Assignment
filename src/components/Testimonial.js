@@ -11,7 +11,7 @@ const Testimonial = () => {
                 <div class="col-md-6">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img" alt="">                           
+                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img" alt="Avatar">                           
                         </div>
                         <div class="testimonial-card-body">
                             <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
@@ -22,7 +22,7 @@ const Testimonial = () => {
                 <div class="col-md-6">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="">                        
+                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Avatar">                        
                         </div>
                         <div class="testimonial-card-body">
                             <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>

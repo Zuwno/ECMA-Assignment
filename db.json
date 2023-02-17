@@ -52,5 +52,12 @@
       "email": "phongpdph21712@fpt.edu.vn",
       "content": "Hello"
     }
+  ],
+  "aboutme": [
+    {
+      "id": 1,
+      "subtitle": "I'm Phong, 20 years old, living in Vietnam and currently a 2nd year student majoring in web design at FPT Polytechnic College.",
+      "src": ""
+    }
   ]
 }

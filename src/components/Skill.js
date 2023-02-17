@@ -8,20 +8,6 @@ const Skill = () => {
                 .then(( data ) => setSkills(data));
       },[]);
 
-      useEffect(function () {
-        const btns = document.querySelectorAll(".btn-remove");
-        for (let btn of btns) {
-          btn.addEventListener("click", function () {
-            const id = btn.dataset.id;
-            fetch(`http://localhost:3000/skills/${id}`, 
-            {
-              method: "DELETE",
-            }).then(() => { const NewSkills = skills.filter((skill) => skill.id != id);
-                setSkills(NewSkills);})
-            
-          });
-        }
-      });
     return `
     <section class="section" id="skill">
         <div class="container text-center">
@@ -29,7 +15,7 @@ const Skill = () => {
             <!-- row -->
             <div class="row">
                 
-            ${skills.map((skill, index) => 
+            ${skills.map((skill) => 
                 {
                     return `
                     <div style ="margin-bottom:40px;" class="col-md-6 col-lg-3">

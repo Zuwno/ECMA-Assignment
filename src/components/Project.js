@@ -9,20 +9,6 @@ const Project = () => {
             .then(( data ) => setProjects(data));
   },[]);
 
-  useEffect(function () {
-    const btns = document.querySelectorAll(".btn-remove");
-    for (let btn of btns) {
-      btn.addEventListener("click", function () {
-        const id = btn.dataset.id;
-        fetch(`http://localhost:3000/projects/${id}`, 
-        {
-          method: "DELETE",
-        }).then(() => { const NewProjects = projects.filter((project) => project.id != id);
-          setProjects(NewProjects);})
-        
-      });
-    }
-  });
 
     return `
     <!-- project section -->
@@ -32,7 +18,7 @@ const Project = () => {
             <h6 class="section-title mb-6">Project</h6>
             <!-- row -->
             <div class="row">
-            ${projects.map((project, index) => 
+            ${projects.map((project) => 
                 {
                     return `
                     <div class="col-md-4">
