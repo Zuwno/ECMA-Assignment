@@ -18,7 +18,7 @@
       "id": 1,
       "name": "HTML5 & CSS3",
       "src": "",
-      "subtitle": ""
+      "subtitle": "adadada"
     },
     {
       "id": 2,
@@ -37,12 +37,6 @@
       "name": "Nextjs",
       "src": "",
       "subtitle": ""
-    },
-    {
-      "name": "adad",
-      "src": "adada",
-      "subtitle": "adad",
-      "id": 5
     }
   ],
   "contacts": [
@@ -59,6 +53,20 @@
       "name": "Zuwno",
       "subtitle": "I'm Phong, 20 years old, living in Vietnam and currently a 2nd year student majoring in web design at FPT Polytechnic College.",
       "src": ""
+    }
+  ],
+  "testmonial": [
+    {
+      "name": "Phong",
+      "content": "123",
+      "avatar": "",
+      "id": 1
+    },
+    {
+      "name": "Long",
+      "content": "321",
+      "avatar": "",
+      "id": 2
     }
   ]
 }

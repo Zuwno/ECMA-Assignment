@@ -3,6 +3,7 @@ import Contact from "./Contact"
 import Project from "./Project"
 import Skill from "./Skill"
 import Testimonial from "./Testimonial"
+import Blog from "./Blog"
 
 
 const Body = () => {
@@ -11,6 +12,7 @@ const Body = () => {
   ${Skill()};
   ${Project()};
   ${Testimonial()};
+  ${Blog()};
   ${Contact()};
   
   `
