@@ -17,6 +17,8 @@ import AdminTestmonialPage from '@/pages/admin/testmonial';
 import AdminTestmonialAddPage from '@/pages/admin/testmonial-add';
 import AdminTestmonialEditPage from '@/pages/admin/testmonial-edit';
 import HomePageAdmin from '@/pages/admin/HomeAdmin';
+import ProjectDetailPage from '@/pages/Project-detail';
+
 
 
 const app = document.querySelector("#app");
@@ -24,8 +26,9 @@ const app = document.querySelector("#app");
 
 router.on ("",() => render(HomePage,app) );
 router.on ("/Admin",() => render(HomePageAdmin,app) );
+router.on("/Project/:id", ({ data }) => render(() => ProjectDetailPage(data), app));
 
-// // router.on ("/Projects/:id", ({data}) => render(() => ProjectDetailPage(data),app));
+
 router.on ("Admin/Projects", () => render(AdminProjectsPage, app))
 router.on ("Admin/Projects/Add" , () => render(AdminProjectsAddPage, app))
 router.on("/Admin/Project/:id/Edit", ({ data }) => render(() => AdminProjectEditPage(data), app));

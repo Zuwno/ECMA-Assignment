@@ -2,11 +2,11 @@
 
 const MainNav = () => {
   return `
-  <nav id="show" class="custom-navbar show-cus " data-spy="affix" data-offset-top="20">
+  <nav id="show" class="custom-navbar show-cus affix " data-spy="affix">
   <div class="container">
       <a class="logo" href="#">Zuwno</a>         
       <ul class="nav show ">
-          <li class="item">
+          <li class="item ">
               <a class="link" href="#">Home</a>
           </li>
           <li class="item">

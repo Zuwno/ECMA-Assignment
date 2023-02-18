@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const navToggle = document.querySelector('.nav-button');
   const navList = document.querySelector('.nav');
-
+console.log(navList);
   navToggle.addEventListener('click', function() {
     navToggle.classList.toggle('is-active');
     navList.classList.toggle('show');
