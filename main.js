@@ -16,12 +16,14 @@ import AdminAboutMeEditPage from '@/pages/admin/aboutMe-edit';
 import AdminTestmonialPage from '@/pages/admin/testmonial';
 import AdminTestmonialAddPage from '@/pages/admin/testmonial-add';
 import AdminTestmonialEditPage from '@/pages/admin/testmonial-edit';
+import HomePageAdmin from '@/pages/admin/HomeAdmin';
 
 
 const app = document.querySelector("#app");
 
 
 router.on ("",() => render(HomePage,app) );
+router.on ("/Admin",() => render(HomePageAdmin,app) );
 
 // // router.on ("/Projects/:id", ({data}) => render(() => ProjectDetailPage(data),app));
 router.on ("Admin/Projects", () => render(AdminProjectsPage, app))

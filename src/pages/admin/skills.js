@@ -1,3 +1,4 @@
+import MainNavAdmin from "@/components/NavAdmin";
 import { useEffect, useState } from "@/lib";
 
 const AdminSkillsPage = () => {
@@ -25,7 +26,10 @@ const AdminSkillsPage = () => {
     }
   });
 
-  return `<div class="container pt-5">
+  return `
+  ${MainNavAdmin()}
+  
+  <div class="container pt-5">
             <h1>Quản lý Kỹ năng</h1>
             <p class="btn"> <a href="#/Admin/Skills/Add">Thêm mới</a> </p>
             <table class="table table-bordered">

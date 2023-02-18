@@ -1,3 +1,4 @@
+import MainNavAdmin from "@/components/NavAdmin";
 import { router, useEffect } from "@/lib";
 
 
@@ -31,7 +32,9 @@ const AdminTestmonialAddPage = () =>
               
           });
       });
-      return `<div class="container pt-5">
+      return `
+      ${MainNavAdmin()}
+      <div class="container pt-5">
           <form action="" id="form-add">
               <div class="form-group">
                   <label for="" class="form-label">Tên</label>

@@ -7,8 +7,8 @@ const Contact = () => {
     const contactEmail = document.querySelector("#contact-email");
     const contactContent = document.querySelector("#comment");
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
+    form.addEventListener("submit", function () {
+      
 
       const formData = {
         name: contactName.value,

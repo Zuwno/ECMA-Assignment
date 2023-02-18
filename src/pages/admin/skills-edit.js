@@ -1,3 +1,4 @@
+import MainNavAdmin from "@/components/NavAdmin";
 import { useEffect, router, useState } from "@/lib";
 
 const AdminSkillEditPage = ({ id }) => {
@@ -36,7 +37,9 @@ const AdminSkillEditPage = ({ id }) => {
             }).then(() => router.navigate("/Admin/Skills"));
         });
     });
-    return `<div>
+    return `
+    ${MainNavAdmin()}
+    <div>
         <div class="container pt-5">
         <h1>Sửa kỹ năng</h1>
             <form action="" id="form-edit">

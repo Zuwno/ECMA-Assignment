@@ -1,3 +1,4 @@
+import MainNavAdmin from "@/components/NavAdmin";
 import { useEffect, useState } from "@/lib";
 
 const AdminContactsPage = () => {
@@ -25,7 +26,9 @@ const AdminContactsPage = () => {
     }
   });
 
-  return `<div class="container pt-5">
+  return `
+  ${MainNavAdmin()}
+  <div class="container pt-5">
             <h1>Quản lý Contact</h1>
             <table class="table table-bordered">
                     <thead>

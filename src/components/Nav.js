@@ -22,8 +22,12 @@ const MainNav = () => {
               <a class="link" href="#blog">Blog</a>
           </li> -->
           <li class="item">
+              <a class="link" class="btn btn-primary" href="#blog">Blog</a>
+          </li>
+          <li class="item">
               <a class="link" class="btn btn-primary" href="#contact">Contact</a>
           </li>
+          
       </ul>
       <button id="nav-toggle" class=" nav-button  hamburger hamburger--elastic">
           <div class="hamburger-box">

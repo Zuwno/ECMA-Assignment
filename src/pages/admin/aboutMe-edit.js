@@ -1,3 +1,4 @@
+import MainNavAdmin from "@/components/NavAdmin";
 import { useEffect, router, useState } from "@/lib";
 
 const AdminAboutMeEditPage = ({ id }) => {
@@ -34,7 +35,9 @@ const AdminAboutMeEditPage = ({ id }) => {
             }).then(() => router.navigate("/Admin/AboutMe"));
         });
     });
-    return `<div>
+    return `
+    ${MainNavAdmin()}
+    <div>
         <div class="container pt-5">
         <h1>Sửa giới thiệu</h1>
             <form action="" id="form-edit">

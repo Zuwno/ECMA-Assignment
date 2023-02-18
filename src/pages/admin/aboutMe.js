@@ -1,3 +1,4 @@
+import MainNavAdmin from "@/components/NavAdmin";
 import { useEffect, useState } from "@/lib";
 
 const AdminAboutMePage = () => {
@@ -10,7 +11,10 @@ const AdminAboutMePage = () => {
             .then(( data ) => setaboutMe(data));
   },[]);
 
-  return `<div class="container pt-5">
+  return `
+  ${MainNavAdmin()}
+  
+  <div class="container pt-5">
             <h1>Giới thiệu</h1>
             <table class="table table-bordered">
                     <thead>
