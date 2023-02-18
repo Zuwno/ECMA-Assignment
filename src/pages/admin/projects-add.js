@@ -1,5 +1,6 @@
 import MainNavAdmin from "@/components/NavAdmin";
 import { router, useEffect } from "@/lib";
+import axios from "axios";
 
 
 
@@ -20,7 +21,9 @@ const AdminProjectsAddPage = () =>
   
           form.addEventListener("submit", function (e) {
               e.preventDefault();
-              
+
+            //   const urls = await uploadFiles(projectImg.files);
+             
               const formData = {
                 
                 name: projectName.value,
@@ -30,7 +33,8 @@ const AdminProjectsAddPage = () =>
                 github: projectGithub.value,
                 preview: projectPreview.value,
                 starttime : projectStarttime.value,
-                endtime: projectEndtime.value
+                endtime: projectEndtime.value,
+                // gallery: urls
               };
             
               fetch("http://localhost:3000/projects", {
@@ -43,6 +47,38 @@ const AdminProjectsAddPage = () =>
               
           });
       });
+
+// const uploadFiles =  async(files) => 
+// {
+//     if (files)
+//     {
+//         const CLOUD_NAME = "djfg1b7vt";
+//     const PRESET_NAME = "EcmaASM" ;
+//     const urls = [];
+//     const FOLDER_NAME = "ECMA-Project"
+//       const api =  `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload` ;
+
+//       const formDataa = new FormData()
+//       formDataa.append("upload_preset", PRESET_NAME);
+//       formDataa.append("folder", FOLDER_NAME);
+
+//       for ( const file of files)
+//       {
+//         formDataa.append("files", file);
+//         const response = await axios.post(api,formDataa,
+//             {
+//                 headers: 
+//                 {
+//                     "Content-Type": "multipart/form-data",
+//                 },
+//             }).then((response) => urls.push(response.data.secure_url))
+        
+//       }
+//       console.log(urls);
+//     //   return urls;
+//     }
+// };
+
       return `
       ${MainNavAdmin()}
       <div class="container pt-5">
@@ -57,7 +93,7 @@ const AdminProjectsAddPage = () =>
               </div>
               <div class="form-group">
                 <label for="" class="form-label">Ảnh</label>
-                <input type="text" class="form-control" id="project-img"  />
+                <input type="file" class="form-control" multiple id="project-img"  />
             </div>
             <div class="form-group">
             <label for="" class="form-label">Mô tả</label>

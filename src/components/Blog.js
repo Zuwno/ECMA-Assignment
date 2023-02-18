@@ -11,7 +11,7 @@ const Blog = () => {
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="">
                 </div>
                 <div class="blog-card-body">
                     <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
@@ -33,7 +33,7 @@ const Blog = () => {
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/img-2.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/img-2.jpg" class="blog-card-img" alt="">
                 </div>
                 <div class="blog-card-body">
                     <h5 class="blog-card-title">Explicabo illo</h6>

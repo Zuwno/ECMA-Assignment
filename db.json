@@ -2,24 +2,24 @@
   "projects": [
     {
       "id": 2,
-      "name": "Project 2",
+      "name": "Dự án 1",
       "category": "Nodejs",
       "src": "Ảnh 1",
-      "describe": "Mô tả 1",
-      "github": "Link Github 1",
-      "preview": "Preview link 1",
+      "describe": "Đây là mô tả dự án 1",
+      "github": "https://github.com/Zuwno",
+      "preview": "https://github.com/Zuwno",
       "starttime": "2023-02-15",
       "endtime": "2023-02-28"
     },
     {
       "id": 3,
-      "name": "Project 3",
-      "category": "Zuwno",
-      "src": "Project 1",
-      "describe": "Đây là mô tả của dự án này...",
-      "github": "",
-      "preview": "",
-      "starttime": "2023-02-15",
+      "name": "Dự án số 2 ",
+      "category": "Javascript",
+      "src": "Ảnh dự án số 2",
+      "describe": "Đây là mô tả của dự án số 2",
+      "github": "https://github.com/Zuwno\t",
+      "preview": "https://github.com/Zuwno\t",
+      "starttime": "2021-06-15",
       "endtime": "2023-02-16"
     }
   ],
@@ -73,14 +73,14 @@
   ],
   "testmonial": [
     {
-      "name": "Phong",
-      "content": "123",
+      "name": "Hiro",
+      "content": "謹んで新年のお喜びを申し上げます 🎍",
       "avatar": "",
       "id": 1
     },
     {
-      "name": "Long",
-      "content": "321",
+      "name": "Shin",
+      "content": "皆様のご健康をお祈り申し上げます｡ 🎆🎆🌃",
       "avatar": "",
       "id": 2
     }

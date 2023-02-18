@@ -39,7 +39,7 @@ const ProjectDetailPage = ({ id }) => {
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/avatar.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/avatar.png" class="about-img" alt="">
                 </div>
                 <div class="about-caption">
                     <h2 class="section-title mb-3">About this Project
