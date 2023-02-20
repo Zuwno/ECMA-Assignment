@@ -18,6 +18,11 @@ import AdminTestmonialAddPage from '@/pages/admin/testmonial-add';
 import AdminTestmonialEditPage from '@/pages/admin/testmonial-edit';
 import HomePageAdmin from '@/pages/admin/HomeAdmin';
 import ProjectDetailPage from '@/pages/Project-detail';
+import AdminLoginPage from '@/pages/admin/login';
+import BlogDetailPage from '@/pages/Blog-detail';
+import AdminBlogsPage from '@/pages/admin/blogs';
+import AdminBlogsAddPage from '@/pages/admin/blogs-add';
+import AdminBlogEditPage from '@/pages/admin/blog-edit';
 
 
 
@@ -26,9 +31,9 @@ const app = document.querySelector("#app");
 
 router.on ("",() => render(HomePage,app) );
 router.on ("/Admin",() => render(HomePageAdmin,app) );
+router.on ("/Admin/Login",() => render(AdminLoginPage,app) );
 router.on("/Project/:id", ({ data }) => render(() => ProjectDetailPage(data), app));
-
-
+router.on("/Blog/:id", ({ data }) => render(() => BlogDetailPage(data), app));
 router.on ("Admin/Projects", () => render(AdminProjectsPage, app))
 router.on ("Admin/Projects/Add" , () => render(AdminProjectsAddPage, app))
 router.on("/Admin/Project/:id/Edit", ({ data }) => render(() => AdminProjectEditPage(data), app));
@@ -41,6 +46,9 @@ router.on("/Admin/AboutMe/:id/Edit", ({ data }) => render(() => AdminAboutMeEdit
 router.on ("Admin/Testmonial", () => render(AdminTestmonialPage, app))
 router.on ("Admin/Testmonial/Add" , () => render(AdminTestmonialAddPage, app))
 router.on("/Admin/Testmonial/:id/Edit", ({ data }) => render(() => AdminTestmonialEditPage(data), app));
+router.on ("Admin/Blogs", () => render(AdminBlogsPage, app))
+router.on ("Admin/Blogs/Add" , () => render(AdminBlogsAddPage, app))
+router.on("/Admin/Blog/:id/Edit", ({ data }) => render(() => AdminBlogEditPage(data), app));
 
 router.notFound( () => render(NotFoundPage,app) );
 

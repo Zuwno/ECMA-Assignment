@@ -21,7 +21,7 @@ const Skill = () => {
                     <div style ="margin-bottom:40px;" class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/analytics.svg" alt="" class="icon">
+                            <img src="assets/imgs/pencil-case.svg" alt="" class="icon">
                             <h6 class="title">${skill.name}</h6>
                             <p class="subtitle">${skill.subtitle}</p>
                         </div>

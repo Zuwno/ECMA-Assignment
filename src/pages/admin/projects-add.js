@@ -2,84 +2,73 @@ import MainNavAdmin from "@/components/NavAdmin";
 import { router, useEffect } from "@/lib";
 import axios from "axios";
 
-
-
-const AdminProjectsAddPage = () => 
-{
-
-     useEffect(() => {
-          const form = document.querySelector("#form-add");
-          const projectName = document.querySelector("#project-name");
-          const projectCategory = document.querySelector("#project-category");
-
-          const projectImg = document.getElementById("project-img");
+const AdminProjectsAddPage = () => {
+  useEffect(() => {
+    const form = document.querySelector("#form-add");
+    const projectName = document.querySelector("#project-name");
+    const projectCategory = document.querySelector("#project-category");
+    const projectImg = document.getElementById("project-img");
     const projectDescribe = document.getElementById("project-describe");
     const projectGithub = document.getElementById("project-github");
     const projectPreview = document.getElementById("project-preview");
     const projectStarttime = document.getElementById("project-starttime");
     const projectEndtime = document.getElementById("project-endtime");
-  
-          form.addEventListener("submit", function (e) {
-              e.preventDefault();
 
-            //   const urls = await uploadFiles(projectImg.files);
-             
-              const formData = {
-                
-                name: projectName.value,
-                category: projectCategory.value,
-                src: projectImg.value,
-                describe: projectDescribe.value,
-                github: projectGithub.value,
-                preview: projectPreview.value,
-                starttime : projectStarttime.value,
-                endtime: projectEndtime.value,
-                // gallery: urls
-              };
-            
-              fetch("http://localhost:3000/projects", {
-                method: "POST",
-                headers: { 
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-              }).then(() => router.navigate("/Admin/Projects"))
-              
-          });
-      });
+    form.addEventListener("submit",function (e) {
+      e.preventDefault();
 
-// const uploadFiles =  async(files) => 
-// {
-//     if (files)
-//     {
-//         const CLOUD_NAME = "djfg1b7vt";
-//     const PRESET_NAME = "EcmaASM" ;
-//     const urls = [];
-//     const FOLDER_NAME = "ECMA-Project"
-//       const api =  `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload` ;
+    //   const urls = await uploadFiles(projectImg.files);
 
-//       const formDataa = new FormData()
+      const formData = {
+        name: projectName.value,
+        category: projectCategory.value,
+        src: projectImg.value,
+        describe: projectDescribe.value,
+        github: projectGithub.value,
+        preview: projectPreview.value,
+        starttime: projectStarttime.value,
+        endtime: projectEndtime.value,
+        // gallery: urls,
+      };
+
+      fetch("http://localhost:3000/projects", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }).then(() => router.navigate("/Admin/Projects"));
+    });
+  });
+
+//   const uploadFiles = async (files) => {
+//     if (files) {
+//       const CLOUD_NAME = "djfg1b7vt";
+//       const PRESET_NAME = "EcmaASM";
+//       const urls = [];
+//       const FOLDER_NAME = "ECMA-Project";
+//       const api = `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`;
+
+//       const formDataa = new FormData();
 //       formDataa.append("upload_preset", PRESET_NAME);
 //       formDataa.append("folder", FOLDER_NAME);
 
-//       for ( const file of files)
-//       {
+//       for (const file of files) {
 //         formDataa.append("files", file);
-//         const response = await axios.post(api,formDataa,
-//             {
-//                 headers: 
-//                 {
-//                     "Content-Type": "multipart/form-data",
-//                 },
-//             }).then((response) => urls.push(response.data.secure_url))
-        
+//         const response = await axios
+//           .post(api, formDataa, {
+//             headers: {
+//               "Content-Type": "multipart/form-data",
+//             },
+//           });
+//           urls.push(response.data.secure_url);
 //       }
 //       console.log(urls);
-//     //   return urls;
+//       //   return urls;
 //     }
-// };
+//   };
 
-      return `
+  return `
       ${MainNavAdmin()}
       <div class="container pt-5">
           <form action="" id="form-add">
@@ -89,7 +78,12 @@ const AdminProjectsAddPage = () =>
               </div>
               <div class="form-group">
                   <label for="" class="form-label">Danh mục</label>
-                  <input type="text" class="form-control" id="project-category" />
+                  <select name="" class="form-control" id="project-category">
+                  <option value="HTML5 & CSS3">HTML5 & CSS3</option>
+                  <option value="Javascript">Javascript</option>
+                  <option value="Nodejs">Nodejs</option>
+                  <option value="Reactjs">Reactjs</option>
+                </select>
               </div>
               <div class="form-group">
                 <label for="" class="form-label">Ảnh</label>

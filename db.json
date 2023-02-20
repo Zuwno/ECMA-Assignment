@@ -7,7 +7,7 @@
       "src": "Ảnh 1",
       "describe": "Đây là mô tả dự án 1",
       "github": "https://github.com/Zuwno",
-      "preview": "https://github.com/Zuwno",
+      "preview": "https://ecma-assignment-eight.vercel.app/",
       "starttime": "2023-02-15",
       "endtime": "2023-02-28"
     },
@@ -51,23 +51,17 @@
   ],
   "contacts": [
     {
-      "id": 1,
-      "name": "Phong",
-      "email": "phongpdph21712@fpt.edu.vn",
-      "content": "Hello"
-    },
-    {
-      "name": "aaaaaaaaaaaaaaaaaa",
-      "email": "WandakhangkhoaaochoKerr@hotmail.com",
-      "content": "adadada",
-      "id": 2
+      "name": "phong",
+      "email": "test@gmail.com",
+      "content": "test",
+      "id": 3
     }
   ],
   "aboutme": [
     {
       "id": 1,
       "name": "Zuwno",
-      "subtitle": "I'm Phong, 20 years old, living in Vietnam and currently a 2nd year student majoring in web design at FPT Polytechnic College.",
+      "subtitle": "I am Zuwno",
       "src": ""
     }
   ],
@@ -83,6 +77,22 @@
       "content": "皆様のご健康をお祈り申し上げます｡ 🎆🎆🌃",
       "avatar": "",
       "id": 2
+    }
+  ],
+  "accounts": [
+    {
+      "username": "admin",
+      "password": "admin123",
+      "id": 1
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "ađâ sua",
+      "content": "adâdsua",
+      "img": "",
+      "category": "Hoạt Hình"
     }
   ]
 }

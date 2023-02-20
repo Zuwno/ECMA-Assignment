@@ -2,14 +2,14 @@ import Footer from "@/components/Footer";
 import MainNav from "@/components/Nav";
 import { useEffect, useState } from "@/lib";
 
-const ProjectDetailPage = ({ id }) => {
+const BlogDetailPage = ({ id }) => {
 
-    const [projects, setProjects] = useState([]);
+    const [blog, setBlog] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/projects/${id}`)
+        fetch(`http://localhost:3000/blogs/${id}`)
                 .then((response) => response.json())
-                .then(( data ) => setProjects(data));
+                .then(( data ) => setBlog(data));
       },[]);
 
   return `
@@ -19,16 +19,10 @@ const ProjectDetailPage = ({ id }) => {
     <div class="overlay"></div>
     <div class="header-content container">
       <h1 class="header-title">
-        <span class="up">Project</span>
-        <span class="down">${projects.name}</span>
+        <span class="down">${blog.title}</span>
       </h1>
-     
-      <a href="${projects.github}"> <button class="btn btn-primary rounded"><ion-icon name="logo-github"></ion-icon> Github </button></a>
-      <a href="${projects.preview}"><button class="btn btn-primary rounded"><ion-icon name="pulse-outline"></ion-icon> Preview </button></a>
-      <button class="btn btn-primary rounded"><ion-icon name="pricetag-outline"></ion-icon> ${projects.category}   </button>
+      <button class="btn btn-primary rounded"><ion-icon name="pricetag-outline"></ion-icon> ${blog.category}   </button>
       <br>
-      <button class="btn btn-primary rounded">Start time  ${projects.starttime}  </button>
-      <button class="btn btn-primary rounded">End time  ${projects.endtime}  </button>
       </div>
   </header>
   <!-- end of page header -->
@@ -45,7 +39,7 @@ const ProjectDetailPage = ({ id }) => {
                     <h2 class="section-title mb-3">About this Project
                     </h2>
                     <p>
-                    ${projects.describe}      
+                    ${blog.content}      
                     </p>
                     
                 </div>              
@@ -56,4 +50,4 @@ const ProjectDetailPage = ({ id }) => {
         ${Footer()}
         `
 }
-export default ProjectDetailPage;
+export default BlogDetailPage;

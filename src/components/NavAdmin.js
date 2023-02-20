@@ -28,6 +28,9 @@ const MainNavAdmin = () => {
         <li class="nav-item">
           <a class="nav-link" href="#/Admin/Contacts">Contact</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/Admin/Blogs">Blogs</a>
+        </li>
         
       </ul>
     </div>

@@ -62,7 +62,13 @@ const AdminProjectEditPage = ({ id }) => {
                 </div>
                 <div class="form-group">
                     <label for="" class="form-label">Danh mục</label>
-                    <input type="text" class="form-control" id="project-category" value="${project.category}" />
+                    <select name="" class="form-control" id="project-category">
+                    <option value="${project.category}">${project.category}</option>
+                  <option value="HTML5 & CSS3">HTML5 & CSS3</option>
+                  <option value="Javascript">Javascript</option>
+                  <option value="Nodejs">Nodejs</option>
+                  <option value="Reactjs">Reactjs</option>
+                </select>
                 </div>
                 <div class="form-group">
                 <label for="" class="form-label">Ảnh</label>
