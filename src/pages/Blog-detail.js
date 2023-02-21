@@ -33,7 +33,7 @@ const BlogDetailPage = ({ id }) => {
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/folio-1.jpg" class="about-img" alt="">
+                    <img src="${blog.img}" class="about-img" alt="">
                 </div>
                 <div class="about-caption">
                     <h2 class="section-title mb-3">About this Project

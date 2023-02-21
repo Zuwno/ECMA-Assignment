@@ -50,7 +50,7 @@ const AdminTestmonialPage = () => {
                                     <td>${index + 1}</td>
                                     <td>${testmonial.name}</td>
                                     <td>${testmonial.content}</td>
-                                    <td>${testmonial.avatar}</td>
+                                    <td><img style=" width: 50px ;" src="${testmonial.avatar}" alt=""></td>
                                     <td>
                                     <button data-name="DataName" data-id="${
                                         testmonial.id

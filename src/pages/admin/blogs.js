@@ -36,6 +36,7 @@ const AdminBlogsPage = () => {
                         <tr>
                             <th>#</th>
                             <th>Title</th>
+                            <th>Subtitle</th>
                             <th>Content</th>
                             <th>Ảnh</th>
                             <th>Category</th>
@@ -49,8 +50,9 @@ const AdminBlogsPage = () => {
                                 <tr>
                                     <td>${index + 1}</td>
                                     <td>${blog.title}</td>
+                                    <td>${blog.subtitle}</td>
                                     <td>${blog.content}</td>
-                                    <td>${blog.img}</td>
+                                    <td><img style=" width: 50px ;" src="${blog.img}" alt=""></td>
                                     <td>${blog.category}</td>
                                     <td>
                                         <button data-name="DataName" data-id="${

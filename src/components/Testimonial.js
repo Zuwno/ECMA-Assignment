@@ -21,7 +21,7 @@ const Testimonial = () => {
             return ` <div class="col-md-6">
                     <div class="testimonial-card">
                         <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar.png" class="testimonial-card-img" alt="Avatar">                           
+                            <img src="${testmonial.avatar}" class="testimonial-card-img" alt="Avatar">                           
                         </div>
                         <div class="testimonial-card-body">
                             <p class="testimonial-card-subtitle">${testmonial.content}</p>

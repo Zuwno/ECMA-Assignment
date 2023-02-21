@@ -21,7 +21,9 @@ const AdminAboutMePage = () => {
                         <tr>
                             <th>#</th>
                             <th>Tên</th>
-                            <th>Giới thiệu</th>
+                            <th>Title</th>
+                            <th>Subtitle</th>
+                            <th>Link Visit</th>
                             <th>Ảnh</th>
                             <th></th>
                         </tr>
@@ -33,8 +35,10 @@ const AdminAboutMePage = () => {
                                 <tr>
                                     <td>${index + 1}</td>
                                     <td>${aboutMe.name}</td>
+                                    <td>${aboutMe.title}</td>
                                     <td>${aboutMe.subtitle}</td>
                                     <td>${aboutMe.src}</td>
+                                    <td><img style=" width: 50px ;" src="${aboutMe.img}" alt=""></td>
                                     <td><a href="#/Admin/AboutMe/${aboutMe.id}/Edit">Edit</a> </td>
                                 
                                 </tr>

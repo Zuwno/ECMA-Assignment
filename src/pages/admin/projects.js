@@ -55,7 +55,7 @@ const AdminProjectsPage = () => {
                                     <td>${index + 1}</td>
                                     <td>${project.name}</td>
                                     <td>${project.category}</td>
-                                    <td>${project.src}</td>
+                                    <td><img style=" width: 50px ;" src="${project.src}" alt=""></td>
                                     <td>${project.describe}</td>
                                     <td>${project.github}</td>
                                     <td>${project.preview}</td>

@@ -37,6 +37,7 @@ const AdminSkillsPage = () => {
                         <tr>
                             <th>#</th>
                             <th>Tên kỹ năng</th>
+                            <th>Ảnh</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -47,6 +48,7 @@ const AdminSkillsPage = () => {
                                 <tr>
                                     <td>${index + 1}</td>
                                     <td>${skill.name}</td>
+                                    <td><img style=" width: 50px ;" src="${skill.src}" alt=""></td>
                                     <td>
                                         <button data-name="DataName" data-id="${
                                           skill.id

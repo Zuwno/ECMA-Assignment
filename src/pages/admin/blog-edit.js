@@ -14,6 +14,7 @@ const AdminBlogEditPage = ({ id }) => {
     const blogContent = document.querySelector("#blog-content");
     const blogImg = document.querySelector("#blog-img");
     const blogCategory = document.querySelector("#blog-category");
+    const blogSubtitle = document.querySelector("#blog-subtitle");
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -21,6 +22,7 @@ const AdminBlogEditPage = ({ id }) => {
       const formData = {
         id,
         title: blogTitle.value,
+        subtitle: blogSubtitle.value,
         content: blogContent.value,
         img: blogImg.value,
         category: blogCategory.value,
@@ -44,6 +46,10 @@ const AdminBlogEditPage = ({ id }) => {
             <div class="form-group">
                   <label for="" class="form-label">Title</label>
                   <input type="text" class="form-control" id="blog-title" value="${blogs.title}" />
+              </div>
+              <div class="form-group">
+                  <label for="" class="form-label">Subtitle</label>
+                  <input type="text" class="form-control" id="blog-subtitle" value="${blogs.title}" />
               </div>
               <div class="form-group">
                   <label for="" class="form-label">Content</label>

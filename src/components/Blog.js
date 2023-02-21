@@ -23,7 +23,7 @@ const Blog = () => {
                     <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="">
+                    <img src="${blog.img}" class="blog-card-img" alt="">
                 </div>
                 <div class="blog-card-body">
                     <h5 class="blog-card-title">${blog.title}</h6>
@@ -33,7 +33,7 @@ const Blog = () => {
                         <a href="#"><i class="ti-heart text-danger"></i> 234</a>
                         <a href="#"><i class="ti-comment"></i> 123</a>
                     </p>
-                    <p>${blog.content}</p>
+                    <p>${blog.subtitle}</p>
 
 
                     <a href="#/Blog/${blog.id}" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>

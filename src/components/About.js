@@ -21,7 +21,7 @@ const About = () => {
                     return `
                     <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/avatar.png" class="about-img" alt="Avatar">
+                    <img src="${aboutme.img}" class="about-img" alt="Avatar">
                 </div>
                 <div class="about-caption">
                     <h2 class="section-title mb-3">About Me</h2>

@@ -72,7 +72,7 @@ const AdminProjectEditPage = ({ id }) => {
                 </div>
                 <div class="form-group">
                 <label for="" class="form-label">Ảnh</label>
-                <input type="text" class="form-control" id="project-img" value="${project.src}" />
+                <input type="file" class="form-control" multiple id="project-img" value="${project.src}"  />
             </div>
             <div class="form-group">
             <label for="" class="form-label">Mô tả</label>

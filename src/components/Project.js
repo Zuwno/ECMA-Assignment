@@ -23,7 +23,7 @@ const Project = () => {
                     return `
                     <div class="col-md-4">
                     <a href="#/Project/${project.id}" class="portfolio-card">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="Project">    
+                        <img src="${project.src}" class="portfolio-card-img" alt="Project">    
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>${project.name}</h5>
