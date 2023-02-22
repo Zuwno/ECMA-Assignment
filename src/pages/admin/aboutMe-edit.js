@@ -1,5 +1,6 @@
 import MainNavAdmin from "@/components/NavAdmin";
 import { useEffect, router, useState } from "@/lib";
+import axios from "axios";
 
 const AdminAboutMeEditPage = ({ id }) => {
 
@@ -18,15 +19,15 @@ const AdminAboutMeEditPage = ({ id }) => {
         const AboutMeImg = document.getElementById("aboutme-img");
         
 
-        form.addEventListener("submit", function (e) {
+        form.addEventListener("submit", async function (e) {
             e.preventDefault();
-
+            const urls= await uploadFiles(AboutMeImg.files);
             const formData = {
                 id,
                 name : AboutMeName.value ,
                 title: AboutMeTitle.value,
                 subtitle: AboutMeSubTitle.value,
-                img: AboutMeImg.value,
+                img: urls,
                 src: AboutMeSrc.value,
                 
             };
@@ -40,6 +41,34 @@ const AdminAboutMeEditPage = ({ id }) => {
             }).then(() => router.navigate("/Admin/AboutMe"));
         });
     });
+    const uploadFiles =async (files)=>{
+        if(files){
+            const CLOUD_NAME="djfg1b7vt";
+            const PRESET_NAME ="upload_portfolio";
+            const FOLDER_NAME="ECMA";
+            const urls=[];  
+            const api=`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`;
+    
+            const formData =new FormData();
+            formData.append('upload_preset',PRESET_NAME);
+            formData.append('folder',FOLDER_NAME);
+    
+            for(const file of files){
+                formData.append('file',file);
+               const response = await axios
+                   .post(api,formData,{
+                        headers:{
+                            "Content-Type":"multipart/form-data"
+                        },
+                    });
+                    urls.push(response.data.secure_url)
+                    // return urls;
+            }
+            
+            return urls;
+        }
+        
+      };
     return `
     ${MainNavAdmin()}
     <div>
@@ -48,19 +77,19 @@ const AdminAboutMeEditPage = ({ id }) => {
             <form action="" id="form-edit">
             <div class="form-group">
                     <label for="" class="form-label">Tên</label>
-                    <input type="text" class="form-control" id="aboutme-name" value="${aboutMe.name}" />
+                    <input type="text" required class="form-control" id="aboutme-name" value="${aboutMe.name}" />
                 </div>
                 <div class="form-group">
                     <label for="" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="aboutme-title" value="${aboutMe.title}" />
+                    <input type="text" required class="form-control" id="aboutme-title" value="${aboutMe.title}" />
                 </div>
                 <div class="form-group">
                     <label for="" class="form-label">Subtitle</label>
-                    <input type="text" class="form-control" id="aboutme-subtitle" value="${aboutMe.subtitle}" />
+                    <input type="text" required class="form-control" id="aboutme-subtitle" value="${aboutMe.subtitle}" />
                 </div>
                 <div class="form-group">
                     <label for="" class="form-label">Link Visit</label>
-                    <input type="text" class="form-control" id="aboutme-src" value="${aboutMe.src}" />
+                    <input type="text" required class="form-control" id="aboutme-src" value="${aboutMe.src}" />
                 </div>
                 <div class="form-group">
                     <label for="" class="form-label">Ảnh</label>

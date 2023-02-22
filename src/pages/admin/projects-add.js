@@ -81,11 +81,11 @@ const AdminProjectsAddPage = () =>
           <form action="" id="form-add">
               <div class="form-group">
                   <label for="" class="form-label">Tên Dự Án</label>
-                  <input type="text" class="form-control" id="project-name" />
+                  <input type="text" required class="form-control" id="project-name" />
               </div>
               <div class="form-group">
                   <label for="" class="form-label">Danh mục</label>
-                  <select name="" class="form-control" id="project-category">
+                  <select name="" required class="form-control" id="project-category">
                   <option value="HTML5 & CSS3">HTML5 & CSS3</option>
                   <option value="Javascript">Javascript</option>
                   <option value="Nodejs">Nodejs</option>
@@ -93,27 +93,27 @@ const AdminProjectsAddPage = () =>
               </div>
               <div class="form-group">
                 <label for="" class="form-label">Ảnh</label>
-                <input type="file" class="form-control" multiple id="project-img"  />
+                <input type="file" required class="form-control" multiple id="project-img"  />
             </div>
             <div class="form-group">
             <label for="" class="form-label">Mô tả</label>
-            <input type="text" class="form-control" id="project-describe"  />
+            <input type="text" required class="form-control" id="project-describe"  />
         </div>
         <div class="form-group">
         <label for="" class="form-label">Github</label>
-        <input type="text" class="form-control" id="project-github"  />
+        <input type="text" required class="form-control" id="project-github"  />
     </div>
     <div class="form-group">
     <label for="" class="form-label">Preview Link</label>
-    <input type="text" class="form-control" id="project-preview"  />
+    <input type="text" required class="form-control" id="project-preview"  />
 </div>
 <div class="form-group">
 <label for="" class="form-label">Thời gian bắt đầu</label>
-<input type="date" class="form-control" id="project-starttime"  />
+<input type="date" required class="form-control" id="project-starttime"  />
 </div>
 <div class="form-group">
 <label for="" class="form-label">Thời gian kết thúc</label>
-<input type="date" class="form-control" id="project-endtime" />
+<input type="date" required class="form-control" id="project-endtime" />
 </div>
               <button style="margin-top:10px;" class="btn btn-primary ">Thêm dự án</button>
           </form>

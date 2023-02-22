@@ -66,15 +66,15 @@ const AdminTestmonialAddPage = () =>
           <form action="" id="form-add">
               <div class="form-group">
                   <label for="" class="form-label">Tên</label>
-                  <input type="text" class="form-control" id="testmonial-name" />
+                  <input type="text" required class="form-control" id="testmonial-name" />
               </div>
               <div class="form-group">
                   <label for="" class="form-label">Nội dung</label>
-                  <input type="text" class="form-control" id="testmonial-content" />
+                  <input type="text" required class="form-control" id="testmonial-content" />
               </div>
               <div class="form-group">
                   <label for="" class="form-label">Ảnh</label>
-                  <input type="file" class="form-control" id="testmonial-avatar" />
+                  <input type="file" required class="form-control" id="testmonial-avatar" />
               </div>
               <button style="margin-top:10px;" class="btn btn-primary ">Thêm</button>
           </form>

@@ -74,7 +74,8 @@ router.notFound(() => render(NotFoundPage, app));
 // const user = account.username;
 // const password = account.password;
 // const userId = account.id;
-//         if (!user) return (window.location.href = "/");
+// console.log(user);
+//         // if (!user) return (window.location.href = "/");
 //         if (user && userId != "1") return (window.location.href = "/login");
 //         done();
 //     },

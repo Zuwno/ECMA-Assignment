@@ -1,6 +1,6 @@
 import MainNavAdmin from "@/components/NavAdmin";
 import { useEffect, router, useState } from "@/lib";
-
+import axios from "axios";
 const AdminSkillEditPage = ({ id }) => {
     // const projects = JSON.parse(localStorage.getItem("projects") || []);
 
@@ -18,13 +18,13 @@ const AdminSkillEditPage = ({ id }) => {
         const skillSrc = document.getElementById("skill-src");
         const skillSubtitle = document.getElementById("skill-subtitle");
 
-        form.addEventListener("submit", function (e) {
+        form.addEventListener("submit", async  function (e) {
             e.preventDefault();
-
+            const urls= await uploadFiles(skillSrc.files);
             const formData = {
                 id,
                 name: skillName.value,
-                src: skillSrc.value,
+                src: urls,
                 subtitle: skillSubtitle.value,
             };
 
@@ -37,6 +37,34 @@ const AdminSkillEditPage = ({ id }) => {
             }).then(() => router.navigate("/Admin/Skills"));
         });
     });
+    const uploadFiles =async (files)=>{
+        if(files){
+            const CLOUD_NAME="djfg1b7vt";
+            const PRESET_NAME ="upload_portfolio";
+            const FOLDER_NAME="ECMA";
+            const urls=[];  
+            const api=`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`;
+    
+            const formData =new FormData();
+            formData.append('upload_preset',PRESET_NAME);
+            formData.append('folder',FOLDER_NAME);
+    
+            for(const file of files){
+                formData.append('file',file);
+               const response = await axios
+                   .post(api,formData,{
+                        headers:{
+                            "Content-Type":"multipart/form-data"
+                        },
+                    });
+                    urls.push(response.data.secure_url)
+                    // return urls;
+            }
+            
+            return urls;
+        }
+        
+      };
     return `
     ${MainNavAdmin()}
     <div>
@@ -45,15 +73,15 @@ const AdminSkillEditPage = ({ id }) => {
             <form action="" id="form-edit">
                 <div class="form-group">
                     <label for="" class="form-label">Tên Kỹ năng</label>
-                    <input type="text" class="form-control" id="skill-name" value="${skill.name}"/>
+                    <input type="text" required class="form-control" id="skill-name" value="${skill.name}"/>
                 </div>
                 <div class="form-group">
                     <label for="" class="form-label">Subtitle</label>
-                    <input type="text" class="form-control" id="skill-subtitle" value="${skill.subtitle}" />
+                    <input type="text"  class="form-control" id="skill-subtitle" value="${skill.subtitle}" />
                 </div>
                 <div class="form-group">
                     <label for="" class="form-label">SRC</label>
-                    <input type="text" class="form-control" id="skill-src" value="${skill.src}" />
+                    <input type="file" required class="form-control" id="skill-src" value="${skill.src}" />
                 </div>
                 
                 <button class="btn btn-primary">Sửa kỹ năng</button>

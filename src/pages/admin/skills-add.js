@@ -66,15 +66,15 @@ const AdminSkillsAddPage = () =>
           <form action="" id="form-add">
               <div class="form-group">
                   <label for="" class="form-label">Tên Kỹ năng</label>
-                  <input type="text" class="form-control" id="skill-name" />
+                  <input type="text" required class="form-control" id="skill-name" />
               </div>
               <div class="form-group">
                   <label for="" class="form-label">Subtitle</label>
-                  <input type="text" class="form-control" id="skill-subtitle" />
+                  <input type="text"  class="form-control" id="skill-subtitle" />
               </div>
               <div class="form-group">
                   <label for="" class="form-label">SRC</label>
-                  <input type="file" class="form-control" id="skill-src" />
+                  <input type="file" required class="form-control" id="skill-src" />
               </div>
               <button style="margin-top:10px;" class="btn btn-primary ">Thêm kỹ năng</button>
           </form>

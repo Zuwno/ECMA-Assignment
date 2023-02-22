@@ -71,19 +71,19 @@ const AdminBlogsAddPage = () =>
           <form action="" id="form-add">
               <div class="form-group">
                   <label for="" class="form-label">Title</label>
-                  <input type="text" class="form-control" id="blog-title" />
+                  <input type="text" required class="form-control" id="blog-title" />
               </div>
               <div class="form-group">
                   <label for="" class="form-label">Subtitle</label>
-                  <input type="text" class="form-control" id="blog-subtitle" />
+                  <input type="text" required class="form-control" id="blog-subtitle" />
               </div>
               <div class="form-group">
                   <label for="" class="form-label">Content</label>
-                  <input type="text" class="form-control" id="blog-content" />
+                  <input type="text" required class="form-control" id="blog-content" />
               </div>
               <div class="form-group">
                   <label for="" class="form-label">Ảnh</label>
-                  <input type="file" class="form-control" id="blog-img" />
+                  <input type="file" required class="form-control" id="blog-img" />
               </div>
               <div class="form-group">
               <label for="" class="form-label">Danh mục</label>

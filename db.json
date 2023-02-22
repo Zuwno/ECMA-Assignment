@@ -2,72 +2,76 @@
   "projects": [
     {
       "id": 4,
-      "name": "Dự án 500",
-      "category": "Reactjs",
-      "src": "https://res.cloudinary.com/djfg1b7vt/image/upload/v1676964433/ECMA/qrd8n06vvkosq6iqgad0.png",
-      "describe": "Dự án 500 mô tả",
+      "name": "Dự án 1",
+      "category": "HTML5 & CSS3",
+      "src": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677084613/ECMA/bank2ovpcunpmfkx2edt.png"
+      ],
+      "describe": "Dự án 1 mô tả",
       "github": "https://github.com/",
       "preview": "https://github.com/",
       "starttime": "2023-02-23",
       "endtime": "2023-02-12"
     },
     {
-      "name": "Dự án 1",
+      "id": 5,
+      "name": "Dự án 2",
       "category": "Javascript",
       "src": [
-        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1676964433/ECMA/qrd8n06vvkosq6iqgad0.png"
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677084629/ECMA/lok5gltplryohrbyyaif.png"
       ],
-      "describe": "Mô tả 1",
+      "describe": "Mô tả 2 mô tả",
       "github": "https://github.com/",
       "preview": "https://github.com/",
       "starttime": "2023-02-12",
-      "endtime": "2023-02-25",
-      "id": 5
+      "endtime": "2023-02-25"
     },
     {
-      "name": "Assignment ECMA ",
-      "category": "HTML5 & CSS3",
+      "id": 6,
+      "name": "Dự án 3",
+      "category": "Javascript",
       "src": [
-        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1676964475/ECMA/ihgwnsxqud9sjl8toaev.png"
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677084656/ECMA/sk4rjn390g3xqpit14kd.png"
       ],
-      "describe": "Mô tả dự án ECMA",
+      "describe": "Mô tả dự án 3 - ECMA",
       "github": "https://github.com/Zuwno\t",
       "preview": "https://ecma-assignment-eight.vercel.app/\t",
       "starttime": "2023-02-10",
-      "endtime": "2023-02-25",
-      "id": 6
+      "endtime": "2023-02-25"
     }
   ],
   "skills": [
     {
       "id": 1,
       "name": "HTML5 & CSS3",
-      "src": "",
-      "subtitle": "adadada"
+      "src": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677085051/ECMA/wqdkfmwbc5zna4hs6gsa.svg"
+      ],
+      "subtitle": "HTML5 & CSS3"
     },
     {
-      "id": 2,
       "name": "Javascript",
-      "src": "",
-      "subtitle": ""
+      "src": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677082045/ECMA/y3wojyacbwxex9w7onya.svg"
+      ],
+      "subtitle": "Javascript",
+      "id": 2
     },
     {
-      "id": 3,
       "name": "Nodejs",
-      "src": "",
-      "subtitle": ""
+      "src": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677082057/ECMA/szqvchsbdxgg4s7ga1nd.svg"
+      ],
+      "subtitle": "Nodejs",
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Nextjs",
-      "src": "",
-      "subtitle": ""
-    },
-    {
-      "name": "tét",
-      "src": "C:\\fakepath\\anhbia.png",
-      "subtitle": "tst",
-      "id": 5
+      "name": "Reactjs",
+      "src": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677082084/ECMA/qy3kbgfuhm3aaq1ch8qp.svg"
+      ],
+      "subtitle": "Reactjs",
+      "id": 4
     }
   ],
   "contacts": [
@@ -84,44 +88,44 @@
       "name": "Phong",
       "title": "Front End Web Developer",
       "subtitle": "I'm Phong, 20 years old, currently a 4th semester student majoring in web design at FPT Polytechnic College",
-      "img": "https://res.cloudinary.com/djfg1b7vt/image/upload/v1676964475/ECMA/ihgwnsxqud9sjl8toaev.png",
+      "img": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677084925/ECMA/ou1yopikpr7xov2ygcxp.png"
+      ],
       "src": "https://github.com/Zuwno"
     }
   ],
   "testmonial": [
     {
-      "name": "Hiro",
-      "content": "謹んで新年のお喜びを申し上げます 🎍",
-      "avatar": "",
-      "id": 1
+      "id": 1,
+      "name": "Luffy",
+      "content": "俺はルフィ！海賊王になる男だ!",
+      "avatar": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677085146/ECMA/ef2vgcmfke4l68gs1huc.jpg"
+      ]
     },
     {
-      "name": "Shin",
-      "content": "皆様のご健康をお祈り申し上げます｡ 🎆🎆🌃",
-      "avatar": "",
+      "name": "Zoro",
+      "content": "九山八海斬れぬ物なし!",
+      "avatar": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677083343/ECMA/hg3pmthbbmnszuhojhko.jpg"
+      ],
       "id": 2
     },
     {
-      "name": "adada",
-      "content": "adad",
+      "name": "Coach Doumoto",
+      "content": "負けたことがある」というのが、いつか大きな財産になる ",
       "avatar": [
-        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1676964220/ECMA/ub5hkzugsrepcosogflq.png"
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677083792/ECMA/zi6alszno6bxpvknd0tp.jpg"
       ],
       "id": 3
     },
     {
-      "name": "adad",
-      "content": "adad",
-      "avatar": "C:\\fakepath\\logo.png",
-      "id": 4
-    },
-    {
-      "name": "aaaa",
-      "content": "bbbbbbb",
+      "name": "Yuji Kitano – Ii Hito",
+      "content": "いやなコトのために、いい思い出を捨てちゃもったいないよ",
       "avatar": [
-        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1676968202/ECMA/xf7fdv5ngha2ncbpeob3.png"
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677084081/ECMA/jb89zvz14tkcpsom0yvw.png"
       ],
-      "id": 5
+      "id": 4
     }
   ],
   "accounts": [
@@ -133,20 +137,24 @@
   ],
   "blogs": [
     {
-      "title": "Bao giờ Luffy trở thành vua Hải tặc ?",
-      "subtitle": "Đã 20 năm từ ngày lần đầu độc giả nhìn thấy Luffy dong buồm ra khơi với ước mơ trở thành Hải tặc Vương, đã 20 năm người ta tò mò xem kho báu vĩ đại nhất của thời đại hải tặc có tên One Piece kia là gì, đã 20 năm băng Mũ rơm vào sinh ra tử để tiến đến Grand Line, rồi New World để đấu với những gương mặt nguy hiểm nhất.",
-      "content": "Như tác giả Oda đã hé lộ trước đó thì phần cuối cùng của bộ truyện One Piece sẽ vô cùng xúc động và sốc, thậm chí nó buồn hơn chuyện của Ace gấp trăm lần. Chính điều này đã khiến nhiều người nghĩ rằng chắc chắn sẽ có một vài sự hi sinh của một số nhân vật quan trọng ở đây. Và người được đồn đoán nhiều nhất ở đây chính là Shanks- người truyền cảm hứng cho Luffy trở thành Vua Hải Tặc.  Đối với nhiều người, cái chết của Shanks có thể thực sự rất khó chấp nhận nhưng có lẽ đối với Oda cái chết của Shanks là vô cùng cần thiết để giúp phát triển cốt truyện. Theo nhiều giả thuyết đưa ra, Shanks sẽ chết dưới tay của Marshall D. Teach và Râu Đen sẽ trở thành Vua hải tặc mới. Để trả thù cho Shanks, Luffy hạ quyết tâm sẽ tiêu diệt Blackbeard và sau khi lật đổ hắn, Luffy sẽ đường đường chính chính ngồi lên ngôi vị Vua Hải Tặc.",
-      "img": "",
-      "category": "Hoạt Hình",
-      "id": 2
+      "id": 4,
+      "title": "Bao giờ Luffy trở thành vua Hải tặc ?\t",
+      "subtitle": "Bao giờ Luffy trở thành vua Hải tặc ?\t",
+      "content": "Như tác giả Oda đã hé lộ trước đó thì phần cuối cùng của bộ truyện One Piece sẽ vô cùng xúc động và sốc, thậm chí nó buồn hơn chuyện của Ace gấp trăm lần. Chính điều này đã khiến nhiều người nghĩ rằng chắc chắn sẽ có một vài sự hi sinh của một số nhân vật quan trọng ở đây. Và người được đồn đoán nhiều nhất ở đây chính là Shanks- người truyền cảm hứng cho Luffy trở thành Vua Hải Tặc. Đối với nhiều người, cái chết của Shanks có thể thực sự rất khó chấp nhận nhưng có lẽ đối với Oda cái chết của Shanks là vô cùng cần thiết để giúp phát triển cốt truyện. Theo nhiều giả thuyết đưa ra, Shanks sẽ chết dưới tay của Marshall D. Teach và Râu Đen sẽ trở thành Vua hải tặc mới. Để trả thù cho Shanks, Luffy hạ quyết tâm sẽ tiêu diệt Blackbeard và sau khi lật đổ hắn, Luffy sẽ đường đường chính chính ngồi lên ngôi vị Vua Hải Tặc.\t",
+      "img": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677084835/ECMA/roxuxulqiarxohxoge9b.png"
+      ],
+      "category": "Hoạt Hình"
     },
     {
-      "title": "Hành trình 15 năm của Naruto đã kết thúc: Tặng bạn một chiếc vé về tuổi thơ!",
-      "subtitle": "HHT - Tối hôm qua 23/3, tập cuối cùng trong bộ anime Naruto đã được chiếu, kết thúc hành trình 15 năm \"ăn ngủ\" cùng Naruto của hàng triệu người hâm mộ trên toàn thế giới. Rất nhiều tiếc nuối và hụt hẫng dành cho sự kết thúc của một huyền thoại.",
-      "content": "Naruto là tựa truyện tranh manga nổi tiếng Nhật Bản của Masashi Kishimoto kể về cuộc đời của cậu bé Uzumaki Naruto, một ninja làng Lá và sau này trở thành Hokage đệ Thất của làng. Xuất hiện lần đầu tiên trên TV Tokyo và mạng lưới truyền hình vệ tinh Animax vào ngày 3 tháng 10 năm 2002, sau hơn 220 tập Naruto Dattebayo chiếu trong 5 năm và 10 năm cho 500 tập Naruto Shippuuden, tối ngày hôm qua, tập cuối của serie Naruto đã được chiếu, đánh dấu cái kết trọn vẹn cho những ai đã dành cả tuổi thơ của mình cùng bộ anime.",
-      "img": "",
+      "title": "Hành trình 15 năm của Naruto đã kết thúc: Tặng bạn một chiếc vé về tuổi thơ!\t",
+      "subtitle": "HHT - Tối 23/3, tập cuối cùng trong bộ anime Naruto đã được chiếu, kết thúc hành trình 15 năm \"ăn ngủ\" cùng Naruto của hàng triệu người hâm mộ trên toàn thế giới. Rất nhiều tiếc nuối và hụt hẫng dành cho sự kết thúc của một huyền thoại.\t",
+      "content": "Naruto là tựa truyện tranh manga nổi tiếng Nhật Bản của Masashi Kishimoto kể về cuộc đời của cậu bé Uzumaki Naruto, một ninja làng Lá và sau này trở thành Hokage đệ Thất của làng. Xuất hiện lần đầu tiên trên TV Tokyo và mạng lưới truyền hình vệ tinh Animax vào ngày 3 tháng 10 năm 2002, sau hơn 220 tập Naruto Dattebayo chiếu trong 5 năm và 10 năm cho 500 tập Naruto Shippuuden, tối ngày hôm qua, tập cuối của serie Naruto đã được chiếu, đánh dấu cái kết trọn vẹn cho những ai đã dành cả tuổi thơ của mình cùng bộ anime.\t",
+      "img": [
+        "https://res.cloudinary.com/djfg1b7vt/image/upload/v1677082727/ECMA/mulfbz5ukdz6v3yozxjn.jpg"
+      ],
       "category": "Hoạt Hình",
-      "id": 3
+      "id": 5
     }
   ]
 }

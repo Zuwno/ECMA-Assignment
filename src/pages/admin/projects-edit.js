@@ -1,5 +1,6 @@
 import MainNavAdmin from "@/components/NavAdmin";
 import { useEffect, router, useState } from "@/lib";
+import axios from "axios";
 
 const AdminProjectEditPage = ({ id }) => {
   // const projects = JSON.parse(localStorage.getItem("projects") || []);
@@ -25,14 +26,14 @@ const AdminProjectEditPage = ({ id }) => {
     const projectEndtime = document.getElementById("project-endtime");
     
 
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("submit", async function (e) {
       e.preventDefault();
-
+      const urls= await uploadFiles(projectImg.files);
       const formData = {
         id,
         name: projectName.value,
         category: projectCategory.value,
-        src: projectImg.value,
+        src: urls,
         describe: projectDescribe.value,
         github: projectGithub.value,
         preview: projectPreview.value,
@@ -49,6 +50,34 @@ const AdminProjectEditPage = ({ id }) => {
       }).then(() => router.navigate("/Admin/Projects"));
     });
   });
+  const uploadFiles =async (files)=>{
+    if(files){
+        const CLOUD_NAME="djfg1b7vt";
+        const PRESET_NAME ="upload_portfolio";
+        const FOLDER_NAME="ECMA";
+        const urls=[];  
+        const api=`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`;
+
+        const formData =new FormData();
+        formData.append('upload_preset',PRESET_NAME);
+        formData.append('folder',FOLDER_NAME);
+
+        for(const file of files){
+            formData.append('file',file);
+           const response = await axios
+               .post(api,formData,{
+                    headers:{
+                        "Content-Type":"multipart/form-data"
+                    },
+                });
+                urls.push(response.data.secure_url)
+                // return urls;
+        }
+        
+        return urls;
+    }
+    
+  };
   return `
   ${MainNavAdmin()}
   
@@ -58,11 +87,11 @@ const AdminProjectEditPage = ({ id }) => {
             <form action="" id="form-edit">
                 <div class="form-group">
                     <label for="" class="form-label">Tên Dự án</label>
-                    <input type="text" class="form-control" id="project-name" value="${project.name}"/>
+                    <input type="text" required class="form-control" id="project-name" value="${project.name}"/>
                 </div>
                 <div class="form-group">
                     <label for="" class="form-label">Danh mục</label>
-                    <select name="" class="form-control" id="project-category">
+                    <select name="" required class="form-control" id="project-category">
                     <option value="${project.category}">${project.category}</option>
                   <option value="HTML5 & CSS3">HTML5 & CSS3</option>
                   <option value="Javascript">Javascript</option>
@@ -72,27 +101,27 @@ const AdminProjectEditPage = ({ id }) => {
                 </div>
                 <div class="form-group">
                 <label for="" class="form-label">Ảnh</label>
-                <input type="file" class="form-control" multiple id="project-img" value="${project.src}"  />
+                <input type="file" required class="form-control" multiple id="project-img" value="${project.src}"  />
             </div>
             <div class="form-group">
             <label for="" class="form-label">Mô tả</label>
-            <input type="text" class="form-control" id="project-describe" value="${project.describe}" />
+            <input type="text" required class="form-control" id="project-describe" value="${project.describe}" />
         </div>
         <div class="form-group">
         <label for="" class="form-label">Github</label>
-        <input type="text" class="form-control" id="project-github" value="${project.github}" />
+        <input type="text" required class="form-control" id="project-github" value="${project.github}" />
     </div>
     <div class="form-group">
     <label for="" class="form-label">Preview Link</label>
-    <input type="text" class="form-control" id="project-preview" value="${project.preview}" />
+    <input type="text" required class="form-control" id="project-preview" value="${project.preview}" />
 </div>
 <div class="form-group">
 <label for="" class="form-label">Thời gian bắt đầu</label>
-<input type="date" class="form-control" id="project-starttime" value="${project.starttime}" />
+<input type="date" required class="form-control" id="project-starttime" value="${project.starttime}" />
 </div>
 <div class="form-group">
 <label for="" class="form-label">Thời gian kết thúc</label>
-<input type="date" class="form-control" id="project-endtime" value="${project.endtime}" />
+<input type="date" required class="form-control" id="project-endtime" value="${project.endtime}" />
 </div>
                 <button class="btn btn-primary">Sửa dự án</button>
             </form>
